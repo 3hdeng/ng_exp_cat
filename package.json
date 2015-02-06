@@ -10,6 +10,8 @@
     "errorhandler": "*",
     "express": "~4.1.1",
     "method-override": "^1.0.0",
-    "mongodb":"*"
-  }
+    "mongodb":"*",
+    "monk":"~0.9.1",
+    "ejs": "~2.2.4"
+}
 }
