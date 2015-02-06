@@ -1,0 +1,30 @@
+<pre>
+    http://localhost:3000/test2 redirect to template rendering by angular app.js,
+    TestCtrl2 , controller.js
+    Test2.query , service.js
+</pre>
+<div ng-controller="Test2Controller">
+    Test2Controller, $scope.test_phones
+    <ul class="phones">
+        <li ng-repeat="phone in test_phones">
+            {{phone}}
+        </li>
+    </ul>
+
+    Test2Controller, $scope.phones
+    <ul class="phones">
+        <li ng-repeat="phone in phones">
+            {{phone.id}}
+        </li>
+    </ul>
+
+    <ul class="phones">
+    <li ng-repeat="phone in phones"
+        class="thumbnail phone-listing">
+        <a href="phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+        <a href="phones/{{phone.id}}">{{phone.name}}</a>
+        <p>{{phone.snippet}}</p>
+    </li>
+    </ul>
+
+</div>
