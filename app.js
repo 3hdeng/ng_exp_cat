@@ -16,7 +16,8 @@ var express = require('express'),
 // New Code
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/expApp2');
+//var db = monk('localhost:27017/expApp2');
+var db = monk('db_docker:27017/expApp2');
 
 
 var app = module.exports = express();
